@@ -1,0 +1,247 @@
+#search {
+    display: flex;
+    width: 280px;
+    height: 35px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    padding-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    justify-content: center;
+}
+
+
+.fa-search {
+    color: rgb(97, 63, 136);
+    size: 20px;
+}
+
+#search-user {
+    width: 80%;
+    height: 20px;
+    font-size: small;
+    padding-left: 10px;
+    border-left-style: solid;
+    border-width: 0 0 0 1px;
+    border-color: rgb(55, 0, 104);
+    color: rgb(133, 116, 117);
+}
+
+#add-user {
+    width: 95px;
+    background-color: rgb(61, 40, 100);
+    border-radius: 50px;
+    border-style: none;
+    font-family: MerriweatherSansRegular;
+    color: white;
+    font-size: 0.75rem;
+}
+
+.cabecalho {
+    justify-content: space-around;
+    font-size: 0.75rem;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0 0.5rem;
+    text-align: left;
+    border-radius: 10px;
+    padding: 30px 30px 0 30px;
+    color: rgb(117, 127, 152);
+}
+
+.nome {
+    padding-left: 15px;
+}
+
+.fa-sort {
+    float: right;
+    margin-right: 20px;
+}
+
+th, td {
+    font-family: MerriweatherSansRegular;
+    font-size: 0.8rem;
+}
+
+.left-border {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(249, 249, 249);
+    border-right: none;
+}
+
+.right-border {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(249, 249, 249);
+    border-left: none;
+}
+
+.border {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(249, 249, 249);
+    border-right: none;
+    border-left: none;
+}
+
+
+th {
+    padding: 17px 0;
+}
+
+td {
+    padding: 8px 0;
+    background-color: rgb(249, 249, 249);
+}
+
+.portrait {
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.list-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.status-ativo {
+    width: 50%;
+    color: rgb(3, 213, 155);
+    background-color: rgb(225, 253, 241);
+    text-align: center;
+    display: block;
+}
+
+.status-inativo {
+    width: 50%;
+    color: rgb(213, 3, 3);
+    background-color: rgb(253, 225, 225);
+    text-align: center;
+    display: block;
+}
+
+.list-icons{
+    display: flex;
+}
+
+.fa-edit, .fa-trash-alt {
+    color: rgb(117, 11, 158);
+}
+
+.fa-trash-alt {
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 800px) {
+
+    #open-menu-btn {
+        display: block;
+    }
+
+    sidebar.active {
+        display: none;
+    }
+    
+    body {
+        width: 100vw;
+        height: 100vh;
+        }
+
+    .profile-items {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        font-family: MerriweatherSansRegular;
+    }
+
+
+    #dashboard-header {
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 30px 0px 20px;
+    }
+
+    #dashboard-header-right{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #users{
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    #search {
+        margin:  0;
+        display: flex;
+        flex-wrap: wrap;
+        width: 250px;
+        height: 30px;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 3px;
+        align-items: center;
+        gap: 15px;
+        justify-content: center;
+    }
+    
+    #search-user {
+        width: 80%;
+        height: 20px;
+        font-size: .9rem;
+    }
+
+    #add-user {
+        align-self: center;
+        width: 95px;
+        font-size: .85rem;
+        padding: .2rem;
+        margin-top: 10px;
+    }
+        
+    .users thead{
+        display: none;
+    }
+
+    .users tbody td, .listprofile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list-profile {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .portrait {
+        margin: 0;
+        padding-bottom: 8px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+       }
+
+       .status {
+        width: 35%;
+    }
+
+    .fa-trash-alt {
+        margin-left: 40px;
+    }
+}

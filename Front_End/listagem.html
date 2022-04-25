@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuários</title>
+    <script src="https://kit.fontawesome.com/d29c294870.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../Front_End/styles/main.css">
+    <link rel="stylesheet" href="../Front_End/styles/listagem.css">
+
+</head>
+
+<body>
+    <sidebar>
+        <div id="logo">
+            <img src="../Front_End/assets/imgs/Logo_Fundo_Transparente_Branca.png" alt="Logo Lyncas Branca"
+                id="logo-branca">
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <div><a href="dashboard.html"><i class="fas fa-border-all"></a></i></div>
+                    <div class="menu-items"><a href="dashboard.html">Dashboard</a></div>
+
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <div><i class="fas fa-users"></i></div>
+                    <div class="menu-items">Usuários</div>
+                    <div class="arrow"><i class="fas fa-angle-right"></i></div>
+                </li>
+            </ul>
+        </div>
+
+    </sidebar>
+
+    <div id="main">
+        <div id="header">
+                <button id="open-menu-btn"><i class="fas fa-align-right"></i></button>
+
+            <div id="header-right">
+                <img src="../Front_End/assets/imgs/perfil.png" alt="profile-pic" id="profile-pic">
+
+                <div class="profile-items">
+                    <span id="username">Nome do Usuário</span>
+                    <span id="logout">Sair</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="dashboard">
+            <div id="content">
+
+                <div id="dashboard-header">
+                    <span id="users">Usuários</span>
+                    <div id="dashboard-header-right">
+                        <div id="search">
+                            <span><i class="fas fa-search fa-1.6x"></i></span>
+                            <input type="text" id="search-user" placeholder="Buscar usuários">
+                            
+                        </div>
+                        <button id="add-user"><a href="cadastro.html">Adicionar</a></button>
+                    </div>
+
+                </div>
+                <table class="users">
+                    <thead>
+                        <tr>
+                            <th class="large-column nome left-border">Nome
+                                <i class="fas fa-sort"></i>
+                            </th>
+                            <th class="large-column border">Telefone
+                                <i class="fas fa-sort border"></i>
+                            </th>
+                            <th class="large-column border">Email
+                                <i class="fas fa-sort"></i>
+                            </th>
+                            <th class="border">Data Nasc.
+                                <i class="fas fa-sort"></i>
+                            </th>
+                            <th class="border">Status
+                                <i class="fas fa-sort"></i>
+                            </th>
+                            <th class="right-border">Ações
+                                <i class="fas fa-sort"></i>
+                            </th>
+                        </tr>
+                    </thead>
+                   
+                    <tbody>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="../Front_End/scripts/menu.js"></script>
+    <script type="module" src="../Front_End/scripts/listarUsuarios.js"></script>
+    <script type= "module" src="../Front_End/scripts/excluirUsuario.js"></script>
+    <script type= "module" src="../Front_End/scripts/atualizarUsuario.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://kit.fontawesome.com/d29c294870.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../Front_End/styles/main.css">
+    <link rel="stylesheet" href="../Front_End/styles/dashboard.css">
+
+</head>
+
+<body>
+    <sidebar>
+        <div id="logo">
+            <img src="../Front_End/assets/imgs/Logo_Fundo_Transparente_Branca.png" alt="Logo Lyncas Branca"
+                id="logo-branca">
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <div><a href="dashboard.html"><i class="fas fa-border-all"></i></div>
+                    <div class="menu-items"><a href="dashboard.html"></a>Dashboard</a></div>
+                    <div class="arrow"><a href="dashboard.html"><i class="fas fa-angle-right"></a></i></div>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <div><a href="listagem.html"><i class="fas fa-users"></a></i></div>
+                    <div class="menu-items"><a href="listagem.html">Usuários</a></div>
+
+                </li>
+            </ul>
+        </div>
+
+    </sidebar>
+
+    <div id="main">
+        <div id="header">
+            <div>
+                <button id="open-menu-btn"><i class="fas fa-align-right"></i></button>
+            </div>
+
+            <div id="header-right">
+                <img src="../Front_End/assets/imgs/perfil.png" alt="profile-pic" id="profile-pic">
+
+                <div class="profile-items">
+                    <span id="username">Nome do Usuário</span>
+                    <span id="logout">Sair</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="dashboard">
+            <div id="content">
+                <span id="welcome">Bem vindo à Lyncas</span>
+            </div>
+        </div>
+    </div>
+
+    <script type= "module" src="../Front_End/scripts/menu.js"></script>
+    </body>
+
+</html>

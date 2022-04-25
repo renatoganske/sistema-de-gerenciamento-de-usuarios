@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <script src="https://kit.fontawesome.com/d29c294870.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../Front_End/styles/cadastro.css">
+    <link rel="stylesheet" href="../Front_End/styles/main.css">
+
+</head>
+
+<body>
+    <sidebar>
+        <div id="logo">
+            <img src="../Front_End/assets/imgs/Logo_Fundo_Transparente_Branca.png" alt="Logo Lyncas Branca"
+                id="logo-branca">
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <div><a href="listagem.html"><i class="fas fa-border-all"></i></div>
+                    <div class="menu-items"><a href="dashboard.html">Dashboard</a></div>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <div><a href="listagem.html"><i class="fas fa-users"></a></i></div>
+                    <div class="menu-items"><a href="listagem.html">Usuários</a></div>
+                    <div class="arrow"><a href="dashboard.html"><i class="fas fa-angle-right"></a></i></div>
+                </li>
+            </ul>
+        </div>
+
+    </sidebar>
+
+    <div id="main">
+        <div id="header">
+            <button id="open-menu-btn"><i class="fas fa-align-right"></i></button>
+
+            <div id="header-right">
+                <img src="../Front_End/assets/imgs/perfil.png" alt="profile-pic" id="profile-pic">
+
+                <div class="profile-items">
+                    <span id="username">Nome do Usuário</span>
+                    <span id="logout">Sair</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="dashboard">
+            <div id="content">
+
+                <div id="dashboard-header">
+                    <span id="users">Usuários / Cadastrar</span>
+                </div>
+
+                <form name="form" id="form">
+                    <div id="form-size">
+                        <fieldset>
+                            <div class="field">
+                                <label for="name">Nome</label>
+                                <input type="text" name="name" id="name">
+                                <div id="validateName"></div>
+                            </div>
+
+                            <div class="field">
+                                <label for="last-name">Sobrenome</label>
+                                <input type="text" name="last-name" id="last-name">
+                                <div id="validateLastName"></div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="field">
+                                <label for="phone">Telefone</label>
+                                <input type="text" name="phone" placeholder="(xx) xxxxx-xxxx" id="phone"
+                                    onkeypress="mask(this,mphone)"; onblur="mask(this,mphone);">
+
+
+                                <div id="validatePhone"></div>
+                            </div>
+
+                            <div class="field">
+                                <label for="birth-date">Data de Nascimento</label>
+                                <input type="date" name="birth-date" placeholder="__/__/____" id="birth-date">
+                                <div id="validateBirthDate"></div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="field">
+                                <label for="email">Email</label>
+                                <input type="text" name="email" id="email">
+                                <div id="checkEmail"></div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="field">
+                                <label for="senha">Senha</label>
+                                <input type="password" name="password" id="password" onkeyup="checkPassword()">
+                                <div id="validatePassword"></div>
+                            </div>
+
+                            <div class="field">
+                                <label for="repeatPassword">Repetir Senha</label>
+                                <input type="password" name="password2" id="password2" onkeyup="repeatPassword()">
+                                <div id="repeatPassword"></div>
+                            </div>
+                        </fieldset>
+
+                        <div class="status">
+                            <input type="checkbox" name="active" id="active">
+                            <label>Ativo</label>
+                        </div>
+                        <button id="btn-registrar" type="submit">Cadastrar</button>
+
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+        </main>
+
+        <script type="module" src="../Front_End/scripts/menu.js"></script>
+        <script type="module" src="../Front_End/scripts/cadastrarUsuario.js"></script>
+        <script src="../Front_End/scripts/mascaraTelefoneRegexSenha.js"></script>
+        <script type="module" src="../Front_End/scripts/excluirUsuario.js"></script>
+</body>
+</html>
